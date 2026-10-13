@@ -1,0 +1,3871 @@
+[
+  {
+    "recipe_id": "plank",
+    "recipe_name": "Plank",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/plank",
+    "craft_time_seconds": 400.0,
+    "device_id": "table-saw",
+    "device_name": "テーブルソー",
+    "inputs": [
+      {
+        "item_id": "logs",
+        "item_name": "原木",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "plank",
+        "item_name": "木材",
+        "quantity": 200.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "coal",
+    "recipe_name": "Coal",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/coal",
+    "craft_time_seconds": 360.0,
+    "device_id": "stone-crusher",
+    "device_name": "ストーンクラッシャー",
+    "inputs": [
+      {
+        "item_id": "coal-ore",
+        "item_name": "石炭鉱石",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "coal",
+        "item_name": "石炭",
+        "quantity": 120.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "charcoal",
+    "recipe_name": "Charcoal",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/charcoal",
+    "craft_time_seconds": 4.0,
+    "device_id": "crucible",
+    "device_name": "るつぼ",
+    "inputs": [
+      {
+        "item_id": "plank",
+        "item_name": "木材",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "charcoal",
+        "item_name": "木炭",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "charcoal-powder",
+    "recipe_name": "Charcoal Powder",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/charcoal-powder",
+    "craft_time_seconds": 4.0,
+    "device_id": "grinder",
+    "device_name": "グラインダー",
+    "inputs": [
+      {
+        "item_id": "charcoal",
+        "item_name": "木炭",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "charcoal-powder",
+        "item_name": "木炭の粉末",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "coke-and-charcoal",
+    "recipe_name": "Coke and Charcoal",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/coke-and-charcoal",
+    "craft_time_seconds": 3.0,
+    "device_id": "athanor",
+    "device_name": "アタノール",
+    "inputs": [
+      {
+        "item_id": "charcoal-powder",
+        "item_name": "木炭の粉末",
+        "quantity": 6.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "coke",
+        "item_name": "コークス",
+        "quantity": 1.0,
+        "probability": 0.5
+      },
+      {
+        "item_id": "charcoal",
+        "item_name": "木炭",
+        "quantity": 2.0,
+        "probability": 0.5
+      }
+    ]
+  },
+  {
+    "recipe_id": "coke",
+    "recipe_name": "Coke",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/coke",
+    "craft_time_seconds": 6.0,
+    "device_id": "crucible",
+    "device_name": "るつぼ",
+    "inputs": [
+      {
+        "item_id": "coal",
+        "item_name": "石炭",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "coke",
+        "item_name": "コークス",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "coke-powder",
+    "recipe_name": "Coke Powder",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/coke-powder",
+    "craft_time_seconds": 12.0,
+    "device_id": "grinder",
+    "device_name": "グラインダー",
+    "inputs": [
+      {
+        "item_id": "coke",
+        "item_name": "コークス",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "coke-powder",
+        "item_name": "コークス粉",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "black-powder",
+    "recipe_name": "Black Powder",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/black-powder",
+    "craft_time_seconds": 12.0,
+    "device_id": "advanced-blender",
+    "device_name": "上級ブレンダー",
+    "inputs": [
+      {
+        "item_id": "sulfur-powder",
+        "item_name": "硫黄粉",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "charcoal-powder",
+        "item_name": "木炭の粉末",
+        "quantity": 12.0
+      },
+      {
+        "item_id": "limewater",
+        "item_name": "石灰水",
+        "quantity": 150.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "black-powder",
+        "item_name": "火薬",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "blast-potion",
+    "recipe_name": "Blast Potion",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/blast-potion",
+    "craft_time_seconds": 6.0,
+    "device_id": "advanced-blender",
+    "device_name": "上級ブレンダー",
+    "inputs": [
+      {
+        "item_id": "oblivion-essence",
+        "item_name": "消滅エッセンス",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "black-powder",
+        "item_name": "火薬",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "brandy",
+        "item_name": "ブランデー",
+        "quantity": 40.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "blast-potion",
+        "item_name": "爆発ポーション",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "panacea-potion",
+    "recipe_name": "Panacea Potion",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/panacea-potion",
+    "craft_time_seconds": 6.0,
+    "device_id": "advanced-blender",
+    "device_name": "上級ブレンダー",
+    "inputs": [
+      {
+        "item_id": "fertile-catalyst",
+        "item_name": "豊穣の触媒",
+        "quantity": 3.0
+      },
+      {
+        "item_id": "blast-potion",
+        "item_name": "爆発ポーション",
+        "quantity": 3.0
+      },
+      {
+        "item_id": "aqua-vitae",
+        "item_name": "生命の水",
+        "quantity": 12.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "panacea-potion",
+        "item_name": "万能薬",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "stone",
+    "recipe_name": "Stone",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/stone",
+    "craft_time_seconds": 450.0,
+    "device_id": "stone-crusher",
+    "device_name": "ストーンクラッシャー",
+    "inputs": [
+      {
+        "item_id": "limestone",
+        "item_name": "石灰石",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "stone",
+        "item_name": "砕石",
+        "quantity": 150.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "iron-ingot",
+    "recipe_name": "Iron Ingot",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/iron-ingot",
+    "craft_time_seconds": 600.0,
+    "device_id": "iron-smelter",
+    "device_name": "鉄製錬炉",
+    "inputs": [
+      {
+        "item_id": "iron-ore",
+        "item_name": "鉄鉱石",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "iron-ingot",
+        "item_name": "鉄インゴット",
+        "quantity": 100.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "sulfur-and-iron-ingot",
+    "recipe_name": "Sulfur and Iron Ingot",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/sulfur-and-iron-ingot",
+    "craft_time_seconds": 960.0,
+    "device_id": "iron-smelter",
+    "device_name": "鉄製錬炉",
+    "inputs": [
+      {
+        "item_id": "pyrite-ore",
+        "item_name": "白鉄鉱",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "sulfur",
+        "item_name": "硫黄",
+        "quantity": 40.0,
+        "probability": 1.0
+      },
+      {
+        "item_id": "iron-ingot",
+        "item_name": "鉄インゴット",
+        "quantity": 120.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "crude-shard",
+    "recipe_name": "Crude Shard",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/crude-shard",
+    "craft_time_seconds": 480.0,
+    "device_id": "stone-crusher",
+    "device_name": "ストーンクラッシャー",
+    "inputs": [
+      {
+        "item_id": "quartz-ore",
+        "item_name": "石英鉱石",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "crude-shard",
+        "item_name": "粗悪なチップ",
+        "quantity": 80.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "stone-and-coal",
+    "recipe_name": "Stone and Coal",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/stone-and-coal",
+    "craft_time_seconds": 3000.0,
+    "device_id": "stone-crusher",
+    "device_name": "ストーンクラッシャー",
+    "inputs": [
+      {
+        "item_id": "meteorite",
+        "item_name": "隕石",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "stone",
+        "item_name": "砕石",
+        "quantity": 300.0,
+        "probability": 1.0
+      },
+      {
+        "item_id": "coal",
+        "item_name": "石炭",
+        "quantity": 300.0,
+        "probability": 1.0
+      },
+      {
+        "item_id": "iron-sand",
+        "item_name": "砂鉄",
+        "quantity": 300.0,
+        "probability": 1.0
+      },
+      {
+        "item_id": "shattered-crystal",
+        "item_name": "砕けた晶石",
+        "quantity": 60.0,
+        "probability": 1.0
+      },
+      {
+        "item_id": "obsidian",
+        "item_name": "黒曜石",
+        "quantity": 30.0,
+        "probability": 1.0
+      },
+      {
+        "item_id": "adamant",
+        "item_name": "金剛石",
+        "quantity": 7.0,
+        "probability": 1.0
+      },
+      {
+        "item_id": "ruby",
+        "item_name": "ルビー",
+        "quantity": 1.0,
+        "probability": 1.0
+      },
+      {
+        "item_id": "sapphire",
+        "item_name": "サファイア",
+        "quantity": 1.0,
+        "probability": 1.0
+      },
+      {
+        "item_id": "emerald",
+        "item_name": "エメラルド",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "quicklime",
+    "recipe_name": "Quicklime",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/quicklime",
+    "craft_time_seconds": 9.0,
+    "device_id": "crucible",
+    "device_name": "るつぼ",
+    "inputs": [
+      {
+        "item_id": "stone",
+        "item_name": "砕石",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "quicklime",
+        "item_name": "生石灰",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "steel-ingot-and-iron-ingot",
+    "recipe_name": "Steel Ingot and Iron Ingot",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/steel-ingot-and-iron-ingot",
+    "craft_time_seconds": 4.0,
+    "device_id": "athanor",
+    "device_name": "アタノール",
+    "inputs": [
+      {
+        "item_id": "iron-ingot",
+        "item_name": "鉄インゴット",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "coke-powder",
+        "item_name": "コークス粉",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "steel-ingot",
+        "item_name": "鋼インゴット",
+        "quantity": 1.0,
+        "probability": 0.25
+      },
+      {
+        "item_id": "iron-ingot",
+        "item_name": "鉄インゴット",
+        "quantity": 1.0,
+        "probability": 0.75
+      }
+    ]
+  },
+  {
+    "recipe_id": "clay",
+    "recipe_name": "Clay",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/clay",
+    "craft_time_seconds": 4.0,
+    "device_id": "assembler",
+    "device_name": "アセンブラー",
+    "inputs": [
+      {
+        "item_id": "charcoal-powder",
+        "item_name": "木炭の粉末",
+        "quantity": 2.0
+      },
+      {
+        "item_id": "sand",
+        "item_name": "砂",
+        "quantity": 4.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "clay",
+        "item_name": "粘土",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "brick",
+    "recipe_name": "Brick",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/brick",
+    "craft_time_seconds": 6.0,
+    "device_id": "kiln",
+    "device_name": "窯",
+    "inputs": [
+      {
+        "item_id": "clay",
+        "item_name": "粘土",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "brick",
+        "item_name": "レンガ",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "glass",
+    "recipe_name": "Glass",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/glass",
+    "craft_time_seconds": 6.0,
+    "device_id": "kiln",
+    "device_name": "窯",
+    "inputs": [
+      {
+        "item_id": "sand",
+        "item_name": "砂",
+        "quantity": 6.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "glass",
+        "item_name": "ガラス",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "bronze-ingot",
+    "recipe_name": "Bronze Ingot",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/bronze-ingot",
+    "craft_time_seconds": 12.0,
+    "device_id": "crucible",
+    "device_name": "るつぼ",
+    "inputs": [
+      {
+        "item_id": "impure-copper-powder",
+        "item_name": "不純銅粉",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "bronze-ingot",
+        "item_name": "青銅インゴット",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "copper-ingot",
+    "recipe_name": "Copper Ingot",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/copper-ingot",
+    "craft_time_seconds": 12.0,
+    "device_id": "crucible",
+    "device_name": "るつぼ",
+    "inputs": [
+      {
+        "item_id": "copper-powder",
+        "item_name": "銅粉",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "copper-ingot",
+        "item_name": "銅インゴット",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "perfect-diamond",
+    "recipe_name": "Perfect Diamond",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/perfect-diamond",
+    "craft_time_seconds": 3.0,
+    "device_id": "refiner",
+    "device_name": "精製機",
+    "inputs": [
+      {
+        "item_id": "diamond",
+        "item_name": "ダイヤモンド",
+        "quantity": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "perfect-diamond",
+        "item_name": "完璧なダイヤモンド",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "crude-shard-2",
+    "recipe_name": "Crude Shard 2",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/crude-shard-2",
+    "craft_time_seconds": 3.0,
+    "device_id": "refiner",
+    "device_name": "精製機",
+    "inputs": [
+      {
+        "item_id": "fully-refined-sand",
+        "item_name": "完璧な精錬砂",
+        "quantity": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "crude-shard",
+        "item_name": "粗悪なチップ",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "broken-shard",
+    "recipe_name": "Broken Shard",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/broken-shard",
+    "craft_time_seconds": 3.0,
+    "device_id": "refiner",
+    "device_name": "精製機",
+    "inputs": [
+      {
+        "item_id": "crude-shard",
+        "item_name": "粗悪なチップ",
+        "quantity": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "broken-shard",
+        "item_name": "破損チップ",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "dull-shard",
+    "recipe_name": "Dull Shard",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/dull-shard",
+    "craft_time_seconds": 3.0,
+    "device_id": "refiner",
+    "device_name": "精製機",
+    "inputs": [
+      {
+        "item_id": "broken-shard",
+        "item_name": "破損チップ",
+        "quantity": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "dull-shard",
+        "item_name": "くすんだチップ",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "shattered-crystal",
+    "recipe_name": "Shattered Crystal",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/shattered-crystal",
+    "craft_time_seconds": 3.0,
+    "device_id": "refiner",
+    "device_name": "精製機",
+    "inputs": [
+      {
+        "item_id": "dull-shard",
+        "item_name": "くすんだチップ",
+        "quantity": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "shattered-crystal",
+        "item_name": "砕けた晶石",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "crude-crystal",
+    "recipe_name": "Crude Crystal",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/crude-crystal",
+    "craft_time_seconds": 3.0,
+    "device_id": "refiner",
+    "device_name": "精製機",
+    "inputs": [
+      {
+        "item_id": "shattered-crystal",
+        "item_name": "砕けた晶石",
+        "quantity": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "crude-crystal",
+        "item_name": "荒い晶石",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "polished-crystal",
+    "recipe_name": "Polished Crystal",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/polished-crystal",
+    "craft_time_seconds": 3.0,
+    "device_id": "refiner",
+    "device_name": "精製機",
+    "inputs": [
+      {
+        "item_id": "crude-crystal",
+        "item_name": "荒い晶石",
+        "quantity": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "polished-crystal",
+        "item_name": "研磨晶石",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "adamant",
+    "recipe_name": "Adamant",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/adamant",
+    "craft_time_seconds": 3.0,
+    "device_id": "refiner",
+    "device_name": "精製機",
+    "inputs": [
+      {
+        "item_id": "polished-crystal",
+        "item_name": "研磨晶石",
+        "quantity": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "adamant",
+        "item_name": "金剛石",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "diamond",
+    "recipe_name": "Diamond",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/diamond",
+    "craft_time_seconds": 3.0,
+    "device_id": "refiner",
+    "device_name": "精製機",
+    "inputs": [
+      {
+        "item_id": "adamant",
+        "item_name": "金剛石",
+        "quantity": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "diamond",
+        "item_name": "ダイヤモンド",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "silver-ingot",
+    "recipe_name": "Silver Ingot",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/silver-ingot",
+    "craft_time_seconds": 16.0,
+    "device_id": "crucible",
+    "device_name": "るつぼ",
+    "inputs": [
+      {
+        "item_id": "silver-powder",
+        "item_name": "銀粉",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "silver-ingot",
+        "item_name": "銀インゴット",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "gold-ingot",
+    "recipe_name": "Gold Ingot",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/gold-ingot",
+    "craft_time_seconds": 40.0,
+    "device_id": "crucible",
+    "device_name": "るつぼ",
+    "inputs": [
+      {
+        "item_id": "pure-gold-dust",
+        "item_name": "純粋砂金",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "gold-ingot",
+        "item_name": "金インゴット",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "iron-ingot-2",
+    "recipe_name": "Iron Ingot 2",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/iron-ingot-2",
+    "craft_time_seconds": 6.0,
+    "device_id": "crucible",
+    "device_name": "るつぼ",
+    "inputs": [
+      {
+        "item_id": "iron-sand",
+        "item_name": "砂鉄",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "iron-ingot",
+        "item_name": "鉄インゴット",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "gold-ingot-2",
+    "recipe_name": "Gold Ingot 2",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/gold-ingot-2",
+    "craft_time_seconds": 40.0,
+    "device_id": "kiln",
+    "device_name": "窯",
+    "inputs": [
+      {
+        "item_id": "gold-coin",
+        "item_name": "金貨",
+        "quantity": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "gold-ingot",
+        "item_name": "金インゴット",
+        "quantity": 2.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "silver-ingot-2",
+    "recipe_name": "Silver Ingot 2",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/silver-ingot-2",
+    "craft_time_seconds": 16.0,
+    "device_id": "kiln",
+    "device_name": "窯",
+    "inputs": [
+      {
+        "item_id": "silver-coin",
+        "item_name": "銀貨",
+        "quantity": 6.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "silver-ingot",
+        "item_name": "銀インゴット",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "copper-ingot-2",
+    "recipe_name": "Copper Ingot 2",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/copper-ingot-2",
+    "craft_time_seconds": 12.0,
+    "device_id": "kiln",
+    "device_name": "窯",
+    "inputs": [
+      {
+        "item_id": "copper-coin",
+        "item_name": "銅貨",
+        "quantity": 400.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "copper-ingot",
+        "item_name": "銅インゴット",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "salt-and-sand",
+    "recipe_name": "Salt and Sand",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/salt-and-sand",
+    "craft_time_seconds": 600.0,
+    "device_id": "stone-crusher",
+    "device_name": "ストーンクラッシャー",
+    "inputs": [
+      {
+        "item_id": "rock-salt",
+        "item_name": "岩塩",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "salt",
+        "item_name": "塩",
+        "quantity": 100.0,
+        "probability": 1.0
+      },
+      {
+        "item_id": "sand",
+        "item_name": "砂",
+        "quantity": 100.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "large-wooden-gear",
+    "recipe_name": "Large Wooden Gear",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/large-wooden-gear",
+    "craft_time_seconds": 6.0,
+    "device_id": "grinder",
+    "device_name": "グラインダー",
+    "inputs": [
+      {
+        "item_id": "plank",
+        "item_name": "木材",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "large-wooden-gear",
+        "item_name": "木製の大歯車",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "wooden-pulley",
+    "recipe_name": "Wooden Pulley",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/wooden-pulley",
+    "craft_time_seconds": 4.0,
+    "device_id": "assembler",
+    "device_name": "アセンブラー",
+    "inputs": [
+      {
+        "item_id": "plank",
+        "item_name": "木材",
+        "quantity": 2.0
+      },
+      {
+        "item_id": "linen-rope",
+        "item_name": "麻縄",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "wooden-pulley",
+        "item_name": "木製滑車",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "mortar",
+    "recipe_name": "Mortar",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/mortar",
+    "craft_time_seconds": 20.0,
+    "device_id": "processor",
+    "device_name": "プロセッサー",
+    "inputs": [
+      {
+        "item_id": "stone",
+        "item_name": "砕石",
+        "quantity": 5.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "mortar",
+        "item_name": "乳鉢",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "iron-nails",
+    "recipe_name": "Iron Nails",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/iron-nails",
+    "craft_time_seconds": 12.0,
+    "device_id": "processor",
+    "device_name": "プロセッサー",
+    "inputs": [
+      {
+        "item_id": "iron-ingot",
+        "item_name": "鉄インゴット",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "iron-nails",
+        "item_name": "鉄釘",
+        "quantity": 3.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "steel-gear",
+    "recipe_name": "Steel Gear",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/steel-gear",
+    "craft_time_seconds": 16.0,
+    "device_id": "processor",
+    "device_name": "プロセッサー",
+    "inputs": [
+      {
+        "item_id": "steel-ingot",
+        "item_name": "鋼インゴット",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "steel-gear",
+        "item_name": "鋼の歯車",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "bronze-rivet",
+    "recipe_name": "Bronze Rivet",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/bronze-rivet",
+    "craft_time_seconds": 12.0,
+    "device_id": "processor",
+    "device_name": "プロセッサー",
+    "inputs": [
+      {
+        "item_id": "bronze-ingot",
+        "item_name": "青銅インゴット",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "bronze-rivet",
+        "item_name": "青銅リベット",
+        "quantity": 3.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "copper-bearing",
+    "recipe_name": "Copper Bearing",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/copper-bearing",
+    "craft_time_seconds": 12.0,
+    "device_id": "processor",
+    "device_name": "プロセッサー",
+    "inputs": [
+      {
+        "item_id": "copper-ingot",
+        "item_name": "銅インゴット",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "copper-bearing",
+        "item_name": "銅ベアリング",
+        "quantity": 2.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "linen-rope",
+    "recipe_name": "Linen Rope",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/linen-rope",
+    "craft_time_seconds": 6.0,
+    "device_id": "processor",
+    "device_name": "プロセッサー",
+    "inputs": [
+      {
+        "item_id": "linen-thread",
+        "item_name": "麻糸",
+        "quantity": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "linen-rope",
+        "item_name": "麻縄",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "linen",
+    "recipe_name": "Linen",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/linen",
+    "craft_time_seconds": 5.0,
+    "device_id": "assembler",
+    "device_name": "アセンブラー",
+    "inputs": [
+      {
+        "item_id": "linen-thread",
+        "item_name": "麻糸",
+        "quantity": 10.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "linen",
+        "item_name": "麻布",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "salt-and-sand-2",
+    "recipe_name": "Salt and Sand 2",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/salt-and-sand-2",
+    "craft_time_seconds": 6.0,
+    "device_id": "athanor",
+    "device_name": "アタノール",
+    "inputs": [
+      {
+        "item_id": "charcoal-powder",
+        "item_name": "木炭の粉末",
+        "quantity": 2.0
+      },
+      {
+        "item_id": "quicklime-powder",
+        "item_name": "石灰粉",
+        "quantity": 4.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "salt",
+        "item_name": "塩",
+        "quantity": 1.0,
+        "probability": 0.33332999999999996
+      },
+      {
+        "item_id": "sand",
+        "item_name": "砂",
+        "quantity": 6.0,
+        "probability": 0.66667
+      }
+    ]
+  },
+  {
+    "recipe_id": "soap",
+    "recipe_name": "Soap",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/soap",
+    "craft_time_seconds": 3.0,
+    "device_id": "blender",
+    "device_name": "ブレンダー",
+    "inputs": [
+      {
+        "item_id": "plant-ash",
+        "item_name": "草木灰",
+        "quantity": 3.0
+      },
+      {
+        "item_id": "linseed-oil",
+        "item_name": "亜麻仁油",
+        "quantity": 200.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "soap",
+        "item_name": "石鹸",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "small-wooden-gear",
+    "recipe_name": "Small Wooden Gear",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/small-wooden-gear",
+    "craft_time_seconds": 12.0,
+    "device_id": "processor",
+    "device_name": "プロセッサー",
+    "inputs": [
+      {
+        "item_id": "large-wooden-gear",
+        "item_name": "木製の大歯車",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "small-wooden-gear",
+        "item_name": "木製の小歯車",
+        "quantity": 3.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "perfumed-soap",
+    "recipe_name": "Perfumed Soap",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/perfumed-soap",
+    "craft_time_seconds": 8.0,
+    "device_id": "blender",
+    "device_name": "ブレンダー",
+    "inputs": [
+      {
+        "item_id": "soap-powder",
+        "item_name": "粉末石鹸",
+        "quantity": 4.0
+      },
+      {
+        "item_id": "lavender-essential-oil",
+        "item_name": "ラベンダー精油",
+        "quantity": 30.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "perfumed-soap",
+        "item_name": "香り石鹸",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "bandage",
+    "recipe_name": "Bandage",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/bandage",
+    "craft_time_seconds": 10.0,
+    "device_id": "assembler",
+    "device_name": "アセンブラー",
+    "inputs": [
+      {
+        "item_id": "linen",
+        "item_name": "麻布",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "healing-potion",
+        "item_name": "回復ポーション",
+        "quantity": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "bandage",
+        "item_name": "包帯",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "moonlit-soap",
+    "recipe_name": "Moonlit Soap",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/moonlit-soap",
+    "craft_time_seconds": 10.0,
+    "device_id": "blender",
+    "device_name": "ブレンダー",
+    "inputs": [
+      {
+        "item_id": "perfumed-soap-powder",
+        "item_name": "粉末香り石鹸",
+        "quantity": 2.0
+      },
+      {
+        "item_id": "moon-tear",
+        "item_name": "月の涙",
+        "quantity": 5.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "moonlit-soap",
+        "item_name": "月光石鹸",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "gloom-fungus-and-plank",
+    "recipe_name": "Gloom Fungus and Plank",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/gloom-fungus-and-plank",
+    "craft_time_seconds": 400.0,
+    "device_id": "table-saw",
+    "device_name": "テーブルソー",
+    "inputs": [
+      {
+        "item_id": "rotten-log",
+        "item_name": "腐朽原木",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "gloom-fungus",
+        "item_name": "幽暗キノコ",
+        "quantity": 40.0,
+        "probability": 1.0
+      },
+      {
+        "item_id": "plank",
+        "item_name": "木材",
+        "quantity": 160.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "flax",
+    "recipe_name": "Flax",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/flax",
+    "craft_time_seconds": 400.0,
+    "device_id": "nursery",
+    "device_name": "苗床",
+    "inputs": [
+      {
+        "item_id": "flax-seeds",
+        "item_name": "亜麻の種",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "flax",
+        "item_name": "亜麻",
+        "quantity": 200.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "sage",
+    "recipe_name": "Sage",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/sage",
+    "craft_time_seconds": 540.0,
+    "device_id": "nursery",
+    "device_name": "苗床",
+    "inputs": [
+      {
+        "item_id": "sage-seeds",
+        "item_name": "セージの種",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "sage",
+        "item_name": "セージ",
+        "quantity": 180.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "redcurrant",
+    "recipe_name": "Redcurrant",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/redcurrant",
+    "craft_time_seconds": 900.0,
+    "device_id": "nursery",
+    "device_name": "苗床",
+    "inputs": [
+      {
+        "item_id": "redcurrant-seeds",
+        "item_name": "レッドカラントの種",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "redcurrant",
+        "item_name": "レッドカラント",
+        "quantity": 150.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "lavender",
+    "recipe_name": "Lavender",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/lavender",
+    "craft_time_seconds": 1440.0,
+    "device_id": "nursery",
+    "device_name": "苗床",
+    "inputs": [
+      {
+        "item_id": "lavender-seeds",
+        "item_name": "ラベンダーの種",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "lavender",
+        "item_name": "ラベンダー",
+        "quantity": 120.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "chamomile",
+    "recipe_name": "Chamomile",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/chamomile",
+    "craft_time_seconds": 1120.0,
+    "device_id": "nursery",
+    "device_name": "苗床",
+    "inputs": [
+      {
+        "item_id": "chamomile-seeds",
+        "item_name": "カモミールの種",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "chamomile",
+        "item_name": "カモミール",
+        "quantity": 140.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "gentian-and-gentian-nectar",
+    "recipe_name": "Gentian and Gentian Nectar",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/gentian-and-gentian-nectar",
+    "craft_time_seconds": 2160.0,
+    "device_id": "nursery",
+    "device_name": "苗床",
+    "inputs": [
+      {
+        "item_id": "gentian-seeds",
+        "item_name": "リンドウの種",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "gentian",
+        "item_name": "リンドウ",
+        "quantity": 80.0,
+        "probability": 1.0
+      },
+      {
+        "item_id": "gentian-nectar",
+        "item_name": "リンドウの蜜",
+        "quantity": 80.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "world-tree-leaf-and-world-tree-core",
+    "recipe_name": "World Tree Leaf and World Tree Core",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/world-tree-leaf-and-world-tree-core",
+    "craft_time_seconds": 300.0,
+    "device_id": "world-tree-nursery",
+    "device_name": "世界樹の苗床",
+    "inputs": [],
+    "outputs": [
+      {
+        "item_id": "world-tree-leaf",
+        "item_name": "世界樹の葉",
+        "quantity": 99.0,
+        "probability": 1.0
+      },
+      {
+        "item_id": "world-tree-core",
+        "item_name": "世界樹の核",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "flax-fiber",
+    "recipe_name": "Flax Fiber",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/flax-fiber",
+    "craft_time_seconds": 3.0,
+    "device_id": "grinder",
+    "device_name": "グラインダー",
+    "inputs": [
+      {
+        "item_id": "flax",
+        "item_name": "亜麻",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "flax-fiber",
+        "item_name": "亜麻繊維",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "plant-ash",
+    "recipe_name": "Plant Ash",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/plant-ash",
+    "craft_time_seconds": 3.0,
+    "device_id": "crucible",
+    "device_name": "るつぼ",
+    "inputs": [
+      {
+        "item_id": "sage",
+        "item_name": "セージ",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "plant-ash",
+        "item_name": "草木灰",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "sage-powder",
+    "recipe_name": "Sage Powder",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/sage-powder",
+    "craft_time_seconds": 3.0,
+    "device_id": "grinder",
+    "device_name": "グラインダー",
+    "inputs": [
+      {
+        "item_id": "sage",
+        "item_name": "セージ",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "sage-powder",
+        "item_name": "セージの粉末",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "chamomile-powder",
+    "recipe_name": "Chamomile Powder",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/chamomile-powder",
+    "craft_time_seconds": 3.0,
+    "device_id": "grinder",
+    "device_name": "グラインダー",
+    "inputs": [
+      {
+        "item_id": "chamomile",
+        "item_name": "カモミール",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "chamomile-powder",
+        "item_name": "カモミールの粉末",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "gentian-powder",
+    "recipe_name": "Gentian Powder",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/gentian-powder",
+    "craft_time_seconds": 3.0,
+    "device_id": "grinder",
+    "device_name": "グラインダー",
+    "inputs": [
+      {
+        "item_id": "gentian",
+        "item_name": "リンドウ",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "gentian-powder",
+        "item_name": "リンドウの粉末",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "sand",
+    "recipe_name": "Sand",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/sand",
+    "craft_time_seconds": 12.0,
+    "device_id": "grinder",
+    "device_name": "グラインダー",
+    "inputs": [
+      {
+        "item_id": "stone",
+        "item_name": "砕石",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "sand",
+        "item_name": "砂",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "iron-sand",
+    "recipe_name": "Iron Sand",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/iron-sand",
+    "craft_time_seconds": 30.0,
+    "device_id": "grinder",
+    "device_name": "グラインダー",
+    "inputs": [
+      {
+        "item_id": "iron-ingot",
+        "item_name": "鉄インゴット",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "iron-sand",
+        "item_name": "砂鉄",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "clay-powder",
+    "recipe_name": "Clay Powder",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/clay-powder",
+    "craft_time_seconds": 4.0,
+    "device_id": "grinder",
+    "device_name": "グラインダー",
+    "inputs": [
+      {
+        "item_id": "clay",
+        "item_name": "粘土",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "clay-powder",
+        "item_name": "粘土粉末",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "copper-powder",
+    "recipe_name": "Copper Powder",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/copper-powder",
+    "craft_time_seconds": 6.0,
+    "device_id": "refiner",
+    "device_name": "精製機",
+    "inputs": [
+      {
+        "item_id": "impure-copper-powder",
+        "item_name": "不純銅粉",
+        "quantity": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "copper-powder",
+        "item_name": "銅粉",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "sulfur-powder",
+    "recipe_name": "Sulfur Powder",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/sulfur-powder",
+    "craft_time_seconds": 6.0,
+    "device_id": "grinder",
+    "device_name": "グラインダー",
+    "inputs": [
+      {
+        "item_id": "sulfur",
+        "item_name": "硫黄",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "sulfur-powder",
+        "item_name": "硫黄粉",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "copper-powder-and-impure-copper-powder",
+    "recipe_name": "Copper Powder and Impure Copper Powder",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/copper-powder-and-impure-copper-powder",
+    "craft_time_seconds": 6.0,
+    "device_id": "athanor",
+    "device_name": "アタノール",
+    "inputs": [
+      {
+        "item_id": "iron-sand",
+        "item_name": "砂鉄",
+        "quantity": 6.0
+      },
+      {
+        "item_id": "soap-powder",
+        "item_name": "粉末石鹸",
+        "quantity": 6.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "copper-powder",
+        "item_name": "銅粉",
+        "quantity": 1.0,
+        "probability": 0.5
+      },
+      {
+        "item_id": "impure-copper-powder",
+        "item_name": "不純銅粉",
+        "quantity": 1.0,
+        "probability": 0.5
+      }
+    ]
+  },
+  {
+    "recipe_id": "quicklime-powder",
+    "recipe_name": "Quicklime Powder",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/quicklime-powder",
+    "craft_time_seconds": 9.0,
+    "device_id": "grinder",
+    "device_name": "グラインダー",
+    "inputs": [
+      {
+        "item_id": "quicklime",
+        "item_name": "生石灰",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "quicklime-powder",
+        "item_name": "石灰粉",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "soap-powder",
+    "recipe_name": "Soap Powder",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/soap-powder",
+    "craft_time_seconds": 6.0,
+    "device_id": "grinder",
+    "device_name": "グラインダー",
+    "inputs": [
+      {
+        "item_id": "soap",
+        "item_name": "石鹸",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "soap-powder",
+        "item_name": "粉末石鹸",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "perfumed-soap-powder",
+    "recipe_name": "Perfumed Soap Powder",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/perfumed-soap-powder",
+    "craft_time_seconds": 8.0,
+    "device_id": "grinder",
+    "device_name": "グラインダー",
+    "inputs": [
+      {
+        "item_id": "perfumed-soap",
+        "item_name": "香り石鹸",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "perfumed-soap-powder",
+        "item_name": "粉末香り石鹸",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "silver-powder-and-crude-silver-powder",
+    "recipe_name": "Silver Powder and Crude Silver Powder",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/silver-powder-and-crude-silver-powder",
+    "craft_time_seconds": 6.4,
+    "device_id": "advanced-athanor",
+    "device_name": "上級アタノール",
+    "inputs": [
+      {
+        "item_id": "copper-powder",
+        "item_name": "銅粉",
+        "quantity": 4.0
+      },
+      {
+        "item_id": "black-powder",
+        "item_name": "火薬",
+        "quantity": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "silver-powder",
+        "item_name": "銀粉",
+        "quantity": 1.0,
+        "probability": 0.2
+      },
+      {
+        "item_id": "crude-silver-powder",
+        "item_name": "粗悪な銀粉",
+        "quantity": 1.0,
+        "probability": 0.8
+      }
+    ]
+  },
+  {
+    "recipe_id": "refined-sand-1",
+    "recipe_name": "Refined Sand 1",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/refined-sand-1",
+    "craft_time_seconds": 3.0,
+    "device_id": "refiner",
+    "device_name": "精製機",
+    "inputs": [
+      {
+        "item_id": "sand",
+        "item_name": "砂",
+        "quantity": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "refined-sand-1",
+        "item_name": "精錬砂1",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "refined-sand-2",
+    "recipe_name": "Refined Sand 2",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/refined-sand-2",
+    "craft_time_seconds": 3.0,
+    "device_id": "refiner",
+    "device_name": "精製機",
+    "inputs": [
+      {
+        "item_id": "refined-sand-1",
+        "item_name": "精錬砂1",
+        "quantity": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "refined-sand-2",
+        "item_name": "精錬砂2",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "refined-sand-3",
+    "recipe_name": "Refined Sand 3",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/refined-sand-3",
+    "craft_time_seconds": 3.0,
+    "device_id": "refiner",
+    "device_name": "精製機",
+    "inputs": [
+      {
+        "item_id": "refined-sand-2",
+        "item_name": "精錬砂2",
+        "quantity": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "refined-sand-3",
+        "item_name": "精錬砂3",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "refined-sand-4",
+    "recipe_name": "Refined Sand 4",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/refined-sand-4",
+    "craft_time_seconds": 3.0,
+    "device_id": "refiner",
+    "device_name": "精製機",
+    "inputs": [
+      {
+        "item_id": "refined-sand-3",
+        "item_name": "精錬砂3",
+        "quantity": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "refined-sand-4",
+        "item_name": "精錬砂4",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "refined-sand-5",
+    "recipe_name": "Refined Sand 5",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/refined-sand-5",
+    "craft_time_seconds": 3.0,
+    "device_id": "refiner",
+    "device_name": "精製機",
+    "inputs": [
+      {
+        "item_id": "refined-sand-4",
+        "item_name": "精錬砂4",
+        "quantity": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "refined-sand-5",
+        "item_name": "精錬砂5",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "fully-refined-sand",
+    "recipe_name": "Fully Refined Sand",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/fully-refined-sand",
+    "craft_time_seconds": 3.0,
+    "device_id": "refiner",
+    "device_name": "精製機",
+    "inputs": [
+      {
+        "item_id": "refined-sand-5",
+        "item_name": "精錬砂5",
+        "quantity": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "fully-refined-sand",
+        "item_name": "完璧な精錬砂",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "impure-silver-powder",
+    "recipe_name": "Impure Silver Powder",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/impure-silver-powder",
+    "craft_time_seconds": 8.0,
+    "device_id": "refiner",
+    "device_name": "精製機",
+    "inputs": [
+      {
+        "item_id": "crude-silver-powder",
+        "item_name": "粗悪な銀粉",
+        "quantity": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "impure-silver-powder",
+        "item_name": "不純銀粉",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "silver-powder",
+    "recipe_name": "Silver Powder",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/silver-powder",
+    "craft_time_seconds": 8.0,
+    "device_id": "refiner",
+    "device_name": "精製機",
+    "inputs": [
+      {
+        "item_id": "impure-silver-powder",
+        "item_name": "不純銀粉",
+        "quantity": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "silver-powder",
+        "item_name": "銀粉",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "gold-dust-and-impure-gold-dust",
+    "recipe_name": "Gold Dust and Impure Gold Dust",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/gold-dust-and-impure-gold-dust",
+    "craft_time_seconds": 8.0,
+    "device_id": "advanced-athanor",
+    "device_name": "上級アタノール",
+    "inputs": [
+      {
+        "item_id": "silver-powder",
+        "item_name": "銀粉",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "volcanic-ash",
+        "item_name": "火山灰",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "quicksilver",
+        "item_name": "水銀",
+        "quantity": 18.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "gold-dust",
+        "item_name": "砂金",
+        "quantity": 1.0,
+        "probability": 0.1
+      },
+      {
+        "item_id": "impure-gold-dust",
+        "item_name": "不純砂金",
+        "quantity": 1.0,
+        "probability": 0.3
+      },
+      {
+        "item_id": "crude-gold-dust",
+        "item_name": "粗悪な砂金",
+        "quantity": 1.0,
+        "probability": 0.6
+      }
+    ]
+  },
+  {
+    "recipe_id": "pure-gold-dust",
+    "recipe_name": "Pure Gold Dust",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/pure-gold-dust",
+    "craft_time_seconds": 10.0,
+    "device_id": "refiner",
+    "device_name": "精製機",
+    "inputs": [
+      {
+        "item_id": "gold-dust",
+        "item_name": "砂金",
+        "quantity": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "pure-gold-dust",
+        "item_name": "純粋砂金",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "impure-gold-dust",
+    "recipe_name": "Impure Gold Dust",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/impure-gold-dust",
+    "craft_time_seconds": 10.0,
+    "device_id": "refiner",
+    "device_name": "精製機",
+    "inputs": [
+      {
+        "item_id": "crude-gold-dust",
+        "item_name": "粗悪な砂金",
+        "quantity": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "impure-gold-dust",
+        "item_name": "不純砂金",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "gold-dust",
+    "recipe_name": "Gold Dust",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/gold-dust",
+    "craft_time_seconds": 10.0,
+    "device_id": "refiner",
+    "device_name": "精製機",
+    "inputs": [
+      {
+        "item_id": "impure-gold-dust",
+        "item_name": "不純砂金",
+        "quantity": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "gold-dust",
+        "item_name": "砂金",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "copper-powder-2",
+    "recipe_name": "Copper Powder 2",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/copper-powder-2",
+    "craft_time_seconds": 12.0,
+    "device_id": "grinder",
+    "device_name": "グラインダー",
+    "inputs": [
+      {
+        "item_id": "copper-ingot",
+        "item_name": "銅インゴット",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "copper-powder",
+        "item_name": "銅粉",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "silver-powder-2",
+    "recipe_name": "Silver Powder 2",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/silver-powder-2",
+    "craft_time_seconds": 16.0,
+    "device_id": "grinder",
+    "device_name": "グラインダー",
+    "inputs": [
+      {
+        "item_id": "silver-ingot",
+        "item_name": "銀インゴット",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "silver-powder",
+        "item_name": "銀粉",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "pure-gold-dust-2",
+    "recipe_name": "Pure Gold Dust 2",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/pure-gold-dust-2",
+    "craft_time_seconds": 40.0,
+    "device_id": "grinder",
+    "device_name": "グラインダー",
+    "inputs": [
+      {
+        "item_id": "gold-ingot",
+        "item_name": "金インゴット",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "pure-gold-dust",
+        "item_name": "純粋砂金",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "volcanic-ash",
+    "recipe_name": "Volcanic Ash",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/volcanic-ash",
+    "craft_time_seconds": 24.0,
+    "device_id": "grinder",
+    "device_name": "グラインダー",
+    "inputs": [
+      {
+        "item_id": "obsidian",
+        "item_name": "黒曜石",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "volcanic-ash",
+        "item_name": "火山灰",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "linen-thread",
+    "recipe_name": "Linen Thread",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/linen-thread",
+    "craft_time_seconds": 3.0,
+    "device_id": "processor",
+    "device_name": "プロセッサー",
+    "inputs": [
+      {
+        "item_id": "flax-fiber",
+        "item_name": "亜麻繊維",
+        "quantity": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "linen-thread",
+        "item_name": "麻糸",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "gloom-spores",
+    "recipe_name": "Gloom Spores",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/gloom-spores",
+    "craft_time_seconds": 4.0,
+    "device_id": "assembler",
+    "device_name": "アセンブラー",
+    "inputs": [
+      {
+        "item_id": "gloom-fungus",
+        "item_name": "幽暗キノコ",
+        "quantity": 2.0
+      },
+      {
+        "item_id": "yeast-powder",
+        "item_name": "酵母粉末",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "gloom-spores",
+        "item_name": "幽暗胞子",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "yeast-powder",
+    "recipe_name": "Yeast Powder",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/yeast-powder",
+    "craft_time_seconds": 4.0,
+    "device_id": "blender",
+    "device_name": "ブレンダー",
+    "inputs": [
+      {
+        "item_id": "soap-powder",
+        "item_name": "粉末石鹸",
+        "quantity": 2.0
+      },
+      {
+        "item_id": "fruit-wine",
+        "item_name": "ベリー酒",
+        "quantity": 40.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "yeast-powder",
+        "item_name": "酵母粉末",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "fertile-catalyst",
+    "recipe_name": "Fertile Catalyst",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/fertile-catalyst",
+    "craft_time_seconds": 8.0,
+    "device_id": "advanced-blender",
+    "device_name": "上級ブレンダー",
+    "inputs": [
+      {
+        "item_id": "unstable-catalyst",
+        "item_name": "不安定な触媒",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "vitality-essence",
+        "item_name": "生命のエッセンス",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "lavender-essential-oil",
+        "item_name": "ラベンダー精油",
+        "quantity": 18.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "fertile-catalyst",
+        "item_name": "豊穣の触媒",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "unstable-catalyst",
+    "recipe_name": "Unstable Catalyst",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/unstable-catalyst",
+    "craft_time_seconds": 4.0,
+    "device_id": "assembler",
+    "device_name": "アセンブラー",
+    "inputs": [
+      {
+        "item_id": "chamomile-powder",
+        "item_name": "カモミールの粉末",
+        "quantity": 2.0
+      },
+      {
+        "item_id": "gloom-spores",
+        "item_name": "幽暗胞子",
+        "quantity": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "unstable-catalyst",
+        "item_name": "不安定な触媒",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "eternal-catalyst",
+    "recipe_name": "Eternal Catalyst",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/eternal-catalyst",
+    "craft_time_seconds": 60.0,
+    "device_id": "arcane-processor",
+    "device_name": "秘術プロセッサー",
+    "inputs": [
+      {
+        "item_id": "resonant-catalyst",
+        "item_name": "共振触媒",
+        "quantity": 15.0
+      },
+      {
+        "item_id": "philosophers-stone",
+        "item_name": "賢者の石",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "eternal-catalyst",
+        "item_name": "永遠の触媒",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "resonant-catalyst",
+    "recipe_name": "Resonant Catalyst",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/resonant-catalyst",
+    "craft_time_seconds": 8.0,
+    "device_id": "advanced-blender",
+    "device_name": "上級ブレンダー",
+    "inputs": [
+      {
+        "item_id": "fertile-catalyst",
+        "item_name": "豊穣の触媒",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "volcanic-ash",
+        "item_name": "火山灰",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "aqua-vitae",
+        "item_name": "生命の水",
+        "quantity": 12.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "resonant-catalyst",
+        "item_name": "共振触媒",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "malachite-and-crude-shard",
+    "recipe_name": "Malachite and Crude Shard",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/malachite-and-crude-shard",
+    "craft_time_seconds": 12.0,
+    "device_id": "athanor",
+    "device_name": "アタノール",
+    "inputs": [
+      {
+        "item_id": "impure-copper-powder",
+        "item_name": "不純銅粉",
+        "quantity": 2.0
+      },
+      {
+        "item_id": "clay-powder",
+        "item_name": "粘土粉末",
+        "quantity": 6.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "malachite",
+        "item_name": "マラカイト",
+        "quantity": 1.0,
+        "probability": 0.5
+      },
+      {
+        "item_id": "crude-shard",
+        "item_name": "粗悪なチップ",
+        "quantity": 1.0,
+        "probability": 0.5
+      }
+    ]
+  },
+  {
+    "recipe_id": "ruby",
+    "recipe_name": "Ruby",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/ruby",
+    "craft_time_seconds": 30.9,
+    "device_id": "cauldron",
+    "device_name": "大釜",
+    "inputs": [
+      {
+        "item_id": "diamond",
+        "item_name": "ダイヤモンド",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "pure-gold-dust",
+        "item_name": "純粋砂金",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "resonant-catalyst",
+        "item_name": "共振触媒",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "ruby",
+        "item_name": "ルビー",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "turquoise",
+    "recipe_name": "Turquoise",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/turquoise",
+    "craft_time_seconds": 12.0,
+    "device_id": "assembler",
+    "device_name": "アセンブラー",
+    "inputs": [
+      {
+        "item_id": "healing-potion",
+        "item_name": "回復ポーション",
+        "quantity": 2.0
+      },
+      {
+        "item_id": "sand",
+        "item_name": "砂",
+        "quantity": 12.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "turquoise",
+        "item_name": "ターコイズ",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "topaz",
+    "recipe_name": "Topaz",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/topaz",
+    "craft_time_seconds": 12.0,
+    "device_id": "blender",
+    "device_name": "ブレンダー",
+    "inputs": [
+      {
+        "item_id": "crude-shard",
+        "item_name": "粗悪なチップ",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "sulfuric-acid",
+        "item_name": "硫酸",
+        "quantity": 30.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "topaz",
+        "item_name": "トパーズ",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "pocket-watch",
+    "recipe_name": "Pocket Watch",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/pocket-watch",
+    "craft_time_seconds": 12.0,
+    "device_id": "advanced-assembler",
+    "device_name": "上級アセンブラー",
+    "inputs": [
+      {
+        "item_id": "steel-gear",
+        "item_name": "鋼の歯車",
+        "quantity": 2.0
+      },
+      {
+        "item_id": "copper-bearing",
+        "item_name": "銅ベアリング",
+        "quantity": 2.0
+      },
+      {
+        "item_id": "glass",
+        "item_name": "ガラス",
+        "quantity": 6.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "pocket-watch",
+        "item_name": "懐中時計",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "sapphire",
+    "recipe_name": "Sapphire",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/sapphire",
+    "craft_time_seconds": 38.2,
+    "device_id": "cauldron",
+    "device_name": "大釜",
+    "inputs": [
+      {
+        "item_id": "perfect-diamond",
+        "item_name": "完璧なダイヤモンド",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "world-tree-core",
+        "item_name": "世界樹の核",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "unstable-catalyst",
+        "item_name": "不安定な触媒",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "sapphire",
+        "item_name": "サファイア",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "lapis-lazuli-and-shattered-crystal",
+    "recipe_name": "Lapis Lazuli and Shattered Crystal",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/lapis-lazuli-and-shattered-crystal",
+    "craft_time_seconds": 12.0,
+    "device_id": "advanced-athanor",
+    "device_name": "上級アタノール",
+    "inputs": [
+      {
+        "item_id": "impure-silver-powder",
+        "item_name": "不純銀粉",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "shattered-crystal",
+        "item_name": "砕けた晶石",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "lapis-lazuli",
+        "item_name": "ラピスラズリ",
+        "quantity": 1.0,
+        "probability": 0.33299999999999996
+      },
+      {
+        "item_id": "shattered-crystal",
+        "item_name": "砕けた晶石",
+        "quantity": 1.0,
+        "probability": 0.33299999999999996
+      },
+      {
+        "item_id": "crude-shard",
+        "item_name": "粗悪なチップ",
+        "quantity": 1.0,
+        "probability": 0.33299999999999996
+      }
+    ]
+  },
+  {
+    "recipe_id": "silver-amulet",
+    "recipe_name": "Silver Amulet",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/silver-amulet",
+    "craft_time_seconds": 10.0,
+    "device_id": "assembler",
+    "device_name": "アセンブラー",
+    "inputs": [
+      {
+        "item_id": "silver-ingot",
+        "item_name": "銀インゴット",
+        "quantity": 2.0
+      },
+      {
+        "item_id": "lapis-lazuli",
+        "item_name": "ラピスラズリ",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "silver-amulet",
+        "item_name": "銀の護符",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "crown",
+    "recipe_name": "Crown",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/crown",
+    "craft_time_seconds": 15.0,
+    "device_id": "advanced-assembler",
+    "device_name": "上級アセンブラー",
+    "inputs": [
+      {
+        "item_id": "gold-ingot",
+        "item_name": "金インゴット",
+        "quantity": 3.0
+      },
+      {
+        "item_id": "ruby",
+        "item_name": "ルビー",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "sapphire",
+        "item_name": "サファイア",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "crown",
+        "item_name": "王冠",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "obsidian-and-volcanic-ash",
+    "recipe_name": "Obsidian and Volcanic Ash",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/obsidian-and-volcanic-ash",
+    "craft_time_seconds": 6.0,
+    "device_id": "advanced-athanor",
+    "device_name": "上級アタノール",
+    "inputs": [
+      {
+        "item_id": "oblivion-essence",
+        "item_name": "消滅エッセンス",
+        "quantity": 2.0
+      },
+      {
+        "item_id": "shattered-crystal",
+        "item_name": "砕けた晶石",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "obsidian",
+        "item_name": "黒曜石",
+        "quantity": 1.0,
+        "probability": 0.5
+      },
+      {
+        "item_id": "volcanic-ash",
+        "item_name": "火山灰",
+        "quantity": 1.0,
+        "probability": 0.5
+      }
+    ]
+  },
+  {
+    "recipe_id": "emerald",
+    "recipe_name": "Emerald",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/emerald",
+    "craft_time_seconds": 45.5,
+    "device_id": "cauldron",
+    "device_name": "大釜",
+    "inputs": [
+      {
+        "item_id": "moonlit-soap",
+        "item_name": "月光石鹸",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "lapis-lazuli",
+        "item_name": "ラピスラズリ",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "fertile-catalyst",
+        "item_name": "豊穣の触媒",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "emerald",
+        "item_name": "エメラルド",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "linseed-oil",
+    "recipe_name": "Linseed Oil",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/linseed-oil",
+    "craft_time_seconds": 2.0,
+    "device_id": "extractor",
+    "device_name": "抽出機",
+    "inputs": [
+      {
+        "item_id": "flax",
+        "item_name": "亜麻",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "linseed-oil",
+        "item_name": "亜麻仁油",
+        "quantity": 50.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "fruit-wine",
+    "recipe_name": "Fruit Wine",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/fruit-wine",
+    "craft_time_seconds": 6.0,
+    "device_id": "extractor",
+    "device_name": "抽出機",
+    "inputs": [
+      {
+        "item_id": "redcurrant",
+        "item_name": "レッドカラント",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "fruit-wine",
+        "item_name": "ベリー酒",
+        "quantity": 10.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "limewater",
+    "recipe_name": "Limewater",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/limewater",
+    "craft_time_seconds": 3.0,
+    "device_id": "extractor",
+    "device_name": "抽出機",
+    "inputs": [
+      {
+        "item_id": "quicklime-powder",
+        "item_name": "石灰粉",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "limewater",
+        "item_name": "石灰水",
+        "quantity": 30.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "lavender-essential-oil",
+    "recipe_name": "Lavender Essential Oil",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/lavender-essential-oil",
+    "craft_time_seconds": 3.0,
+    "device_id": "alembic",
+    "device_name": "アランビック",
+    "inputs": [
+      {
+        "item_id": "lavender",
+        "item_name": "ラベンダー",
+        "quantity": 3.0
+      },
+      {
+        "item_id": "linseed-oil",
+        "item_name": "亜麻仁油",
+        "quantity": 300.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "lavender-essential-oil",
+        "item_name": "ラベンダー精油",
+        "quantity": 15.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "brine",
+    "recipe_name": "Brine",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/brine",
+    "craft_time_seconds": 4.0,
+    "device_id": "extractor",
+    "device_name": "抽出機",
+    "inputs": [
+      {
+        "item_id": "salt",
+        "item_name": "塩",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "brine",
+        "item_name": "塩水",
+        "quantity": 20.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "brandy",
+    "recipe_name": "Brandy",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/brandy",
+    "craft_time_seconds": 5.0,
+    "device_id": "alembic",
+    "device_name": "アランビック",
+    "inputs": [
+      {
+        "item_id": "coke-powder",
+        "item_name": "コークス粉",
+        "quantity": 5.0
+      },
+      {
+        "item_id": "fruit-wine",
+        "item_name": "ベリー酒",
+        "quantity": 100.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "brandy",
+        "item_name": "ブランデー",
+        "quantity": 40.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "sulfuric-acid",
+    "recipe_name": "Sulfuric Acid",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/sulfuric-acid",
+    "craft_time_seconds": 4.0,
+    "device_id": "alembic",
+    "device_name": "アランビック",
+    "inputs": [
+      {
+        "item_id": "sulfur-powder",
+        "item_name": "硫黄粉",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "brine",
+        "item_name": "塩水",
+        "quantity": 60.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "sulfuric-acid",
+        "item_name": "硫酸",
+        "quantity": 20.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "aqua-vitae",
+    "recipe_name": "Aqua Vitae",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/aqua-vitae",
+    "craft_time_seconds": 8.0,
+    "device_id": "advanced-alembic",
+    "device_name": "上級アランビック",
+    "inputs": [
+      {
+        "item_id": "gentian-nectar",
+        "item_name": "リンドウの蜜",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "world-tree-leaf",
+        "item_name": "世界樹の葉",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "brandy",
+        "item_name": "ブランデー",
+        "quantity": 200.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "aqua-vitae",
+        "item_name": "生命の水",
+        "quantity": 10.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "quicksilver",
+    "recipe_name": "Quicksilver",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/quicksilver",
+    "craft_time_seconds": 8.0,
+    "device_id": "advanced-alembic",
+    "device_name": "上級アランビック",
+    "inputs": [
+      {
+        "item_id": "crude-silver-powder",
+        "item_name": "粗悪な銀粉",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "vitality-essence",
+        "item_name": "生命のエッセンス",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "sulfuric-acid",
+        "item_name": "硫酸",
+        "quantity": 80.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "quicksilver",
+        "item_name": "水銀",
+        "quantity": 10.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "moon-tear",
+    "recipe_name": "Moon Tear",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/moon-tear",
+    "craft_time_seconds": 8.0,
+    "device_id": "advanced-alembic",
+    "device_name": "上級アランビック",
+    "inputs": [
+      {
+        "item_id": "star-dust",
+        "item_name": "星の砂",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "fairy-tear",
+        "item_name": "精霊の涙",
+        "quantity": 18.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "moon-tear",
+        "item_name": "月の涙",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "fairy-tear",
+    "recipe_name": "Fairy Tear",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/fairy-tear",
+    "craft_time_seconds": 4.0,
+    "device_id": "extractor",
+    "device_name": "抽出機",
+    "inputs": [
+      {
+        "item_id": "fairy-dust",
+        "item_name": "精霊の粉末",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "fairy-tear",
+        "item_name": "精霊の涙",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "healing-potion",
+    "recipe_name": "Healing Potion",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/healing-potion",
+    "craft_time_seconds": 6.0,
+    "device_id": "assembler",
+    "device_name": "アセンブラー",
+    "inputs": [
+      {
+        "item_id": "sage-powder",
+        "item_name": "セージの粉末",
+        "quantity": 6.0
+      },
+      {
+        "item_id": "flax-fiber",
+        "item_name": "亜麻繊維",
+        "quantity": 6.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "healing-potion",
+        "item_name": "回復ポーション",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "vitality-potion",
+    "recipe_name": "Vitality Potion",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/vitality-potion",
+    "craft_time_seconds": 8.0,
+    "device_id": "blender",
+    "device_name": "ブレンダー",
+    "inputs": [
+      {
+        "item_id": "quicklime-powder",
+        "item_name": "石灰粉",
+        "quantity": 4.0
+      },
+      {
+        "item_id": "fruit-wine",
+        "item_name": "ベリー酒",
+        "quantity": 80.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "vitality-potion",
+        "item_name": "活力ポーション",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "transformation-potion",
+    "recipe_name": "Transformation Potion",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/transformation-potion",
+    "craft_time_seconds": 6.0,
+    "device_id": "assembler",
+    "device_name": "アセンブラー",
+    "inputs": [
+      {
+        "item_id": "coke-powder",
+        "item_name": "コークス粉",
+        "quantity": 2.0
+      },
+      {
+        "item_id": "gloom-spores",
+        "item_name": "幽暗胞子",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "transformation-potion",
+        "item_name": "変化ポーション",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "growth-potion",
+    "recipe_name": "Growth Potion",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/growth-potion",
+    "craft_time_seconds": 6.0,
+    "device_id": "advanced-blender",
+    "device_name": "上級ブレンダー",
+    "inputs": [
+      {
+        "item_id": "chamomile-powder",
+        "item_name": "カモミールの粉末",
+        "quantity": 2.0
+      },
+      {
+        "item_id": "clay-powder",
+        "item_name": "粘土粉末",
+        "quantity": 6.0
+      },
+      {
+        "item_id": "brine",
+        "item_name": "塩水",
+        "quantity": 80.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "growth-potion",
+        "item_name": "成長ポーション",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "basic-fertilizer",
+    "recipe_name": "Basic Fertilizer",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/basic-fertilizer",
+    "craft_time_seconds": 4.0,
+    "device_id": "assembler",
+    "device_name": "アセンブラー",
+    "inputs": [
+      {
+        "item_id": "plant-ash",
+        "item_name": "草木灰",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "quicklime-powder",
+        "item_name": "石灰粉",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "basic-fertilizer",
+        "item_name": "初級肥料",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "advanced-fertilizer",
+    "recipe_name": "Advanced Fertilizer",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/advanced-fertilizer",
+    "craft_time_seconds": 4.0,
+    "device_id": "assembler",
+    "device_name": "アセンブラー",
+    "inputs": [
+      {
+        "item_id": "basic-fertilizer",
+        "item_name": "初級肥料",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "gloom-fungus",
+        "item_name": "幽暗キノコ",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "advanced-fertilizer",
+        "item_name": "上級肥料",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "jupiter",
+    "recipe_name": "Jupiter",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/jupiter",
+    "craft_time_seconds": 600.0,
+    "device_id": "shaper",
+    "device_name": "シェイパー",
+    "inputs": [
+      {
+        "item_id": "plank",
+        "item_name": "木材",
+        "quantity": 1200.0
+      },
+      {
+        "item_id": "small-wooden-gear",
+        "item_name": "木製の小歯車",
+        "quantity": 1800.0
+      },
+      {
+        "item_id": "wooden-pulley",
+        "item_name": "木製滑車",
+        "quantity": 600.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "jupiter",
+        "item_name": "木星",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "saturn",
+    "recipe_name": "Saturn",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/saturn",
+    "craft_time_seconds": 300.0,
+    "device_id": "shaper",
+    "device_name": "シェイパー",
+    "inputs": [
+      {
+        "item_id": "salt",
+        "item_name": "塩",
+        "quantity": 600.0
+      },
+      {
+        "item_id": "brick",
+        "item_name": "レンガ",
+        "quantity": 600.0
+      },
+      {
+        "item_id": "glass",
+        "item_name": "ガラス",
+        "quantity": 600.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "saturn",
+        "item_name": "土星",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "mars",
+    "recipe_name": "Mars",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/mars",
+    "craft_time_seconds": 300.0,
+    "device_id": "shaper",
+    "device_name": "シェイパー",
+    "inputs": [
+      {
+        "item_id": "iron-nails",
+        "item_name": "鉄釘",
+        "quantity": 600.0
+      },
+      {
+        "item_id": "steel-gear",
+        "item_name": "鋼の歯車",
+        "quantity": 300.0
+      },
+      {
+        "item_id": "bronze-rivet",
+        "item_name": "青銅リベット",
+        "quantity": 600.0
+      },
+      {
+        "item_id": "copper-bearing",
+        "item_name": "銅ベアリング",
+        "quantity": 300.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "mars",
+        "item_name": "火星",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "venus",
+    "recipe_name": "Venus",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/venus",
+    "craft_time_seconds": 1200.0,
+    "device_id": "advanced-shaper",
+    "device_name": "上級シェイパー",
+    "inputs": [
+      {
+        "item_id": "healing-potion",
+        "item_name": "回復ポーション",
+        "quantity": 200.0
+      },
+      {
+        "item_id": "vitality-potion",
+        "item_name": "活力ポーション",
+        "quantity": 200.0
+      },
+      {
+        "item_id": "transformation-potion",
+        "item_name": "変化ポーション",
+        "quantity": 200.0
+      },
+      {
+        "item_id": "growth-potion",
+        "item_name": "成長ポーション",
+        "quantity": 200.0
+      },
+      {
+        "item_id": "blast-potion",
+        "item_name": "爆発ポーション",
+        "quantity": 200.0
+      },
+      {
+        "item_id": "sulfuric-acid",
+        "item_name": "硫酸",
+        "quantity": 4000.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "venus",
+        "item_name": "金星",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "mercury",
+    "recipe_name": "Mercury",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/mercury",
+    "craft_time_seconds": 600.0,
+    "device_id": "advanced-shaper",
+    "device_name": "上級シェイパー",
+    "inputs": [
+      {
+        "item_id": "turquoise",
+        "item_name": "ターコイズ",
+        "quantity": 100.0
+      },
+      {
+        "item_id": "malachite",
+        "item_name": "マラカイト",
+        "quantity": 100.0
+      },
+      {
+        "item_id": "topaz",
+        "item_name": "トパーズ",
+        "quantity": 100.0
+      },
+      {
+        "item_id": "obsidian",
+        "item_name": "黒曜石",
+        "quantity": 100.0
+      },
+      {
+        "item_id": "lapis-lazuli",
+        "item_name": "ラピスラズリ",
+        "quantity": 100.0
+      },
+      {
+        "item_id": "quicksilver",
+        "item_name": "水銀",
+        "quantity": 1000.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "mercury",
+        "item_name": "水星",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "luna",
+    "recipe_name": "Luna",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/luna",
+    "craft_time_seconds": 600.0,
+    "device_id": "advanced-shaper",
+    "device_name": "上級シェイパー",
+    "inputs": [
+      {
+        "item_id": "steel-ingot",
+        "item_name": "鋼インゴット",
+        "quantity": 75.0
+      },
+      {
+        "item_id": "bronze-ingot",
+        "item_name": "青銅インゴット",
+        "quantity": 75.0
+      },
+      {
+        "item_id": "copper-ingot",
+        "item_name": "銅インゴット",
+        "quantity": 75.0
+      },
+      {
+        "item_id": "silver-ingot",
+        "item_name": "銀インゴット",
+        "quantity": 75.0
+      },
+      {
+        "item_id": "gold-ingot",
+        "item_name": "金インゴット",
+        "quantity": 75.0
+      },
+      {
+        "item_id": "moon-tear",
+        "item_name": "月の涙",
+        "quantity": 75.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "luna",
+        "item_name": "ルナ",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "sol",
+    "recipe_name": "Sol",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/sol",
+    "craft_time_seconds": 300.0,
+    "device_id": "arcane-shaper",
+    "device_name": "秘術シェイパー",
+    "inputs": [
+      {
+        "item_id": "jupiter",
+        "item_name": "木星",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "saturn",
+        "item_name": "土星",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "mars",
+        "item_name": "火星",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "venus",
+        "item_name": "金星",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "mercury",
+        "item_name": "水星",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "luna",
+        "item_name": "ルナ",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "perfect-diamond",
+        "item_name": "完璧なダイヤモンド",
+        "quantity": 25.0
+      },
+      {
+        "item_id": "eternal-catalyst",
+        "item_name": "永遠の触媒",
+        "quantity": 5.0
+      },
+      {
+        "item_id": "world-tree-core",
+        "item_name": "世界樹の核",
+        "quantity": 5.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "sol",
+        "item_name": "ソル",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "philosophers-stone",
+    "recipe_name": "Philosophers Stone",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/philosophers-stone",
+    "craft_time_seconds": 60.0,
+    "device_id": "cauldron",
+    "device_name": "大釜",
+    "inputs": [
+      {
+        "item_id": "ruby",
+        "item_name": "ルビー",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "sapphire",
+        "item_name": "サファイア",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "emerald",
+        "item_name": "エメラルド",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "philosophers-stone",
+        "item_name": "賢者の石",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "fairy-dust",
+    "recipe_name": "Fairy Dust",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/fairy-dust",
+    "craft_time_seconds": 4.0,
+    "device_id": "arcane-processor",
+    "device_name": "秘術プロセッサー",
+    "inputs": [
+      {
+        "item_id": "chamomile-powder",
+        "item_name": "カモミールの粉末",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "gentian-powder",
+        "item_name": "リンドウの粉末",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "world-tree-leaf",
+        "item_name": "世界樹の葉",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "fairy-dust",
+        "item_name": "精霊の粉末",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "oblivion-essence",
+    "recipe_name": "Oblivion Essence",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/oblivion-essence",
+    "craft_time_seconds": 8.7,
+    "device_id": "paradox-crucible",
+    "device_name": "パラドックスるつぼ",
+    "inputs": [
+      {
+        "item_id": "sage-seeds",
+        "item_name": "セージの種",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "oblivion-essence",
+        "item_name": "消滅エッセンス",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "vitality-essence",
+    "recipe_name": "Vitality Essence",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/vitality-essence",
+    "craft_time_seconds": 5.1,
+    "device_id": "paradox-crucible",
+    "device_name": "パラドックスるつぼ",
+    "inputs": [
+      {
+        "item_id": "oblivion-essence",
+        "item_name": "消滅エッセンス",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "vitality-essence",
+        "item_name": "生命のエッセンス",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "star-dust",
+    "recipe_name": "Star Dust",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/star-dust",
+    "craft_time_seconds": 300.0,
+    "device_id": "arcane-processor",
+    "device_name": "秘術プロセッサー",
+    "inputs": [
+      {
+        "item_id": "jupiter",
+        "item_name": "木星",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "saturn",
+        "item_name": "土星",
+        "quantity": 1.0
+      },
+      {
+        "item_id": "mars",
+        "item_name": "火星",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "star-dust",
+        "item_name": "星の砂",
+        "quantity": 5.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "gold-coin",
+    "recipe_name": "Gold Coin",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/gold-coin",
+    "craft_time_seconds": 40.0,
+    "device_id": "processor",
+    "device_name": "プロセッサー",
+    "inputs": [
+      {
+        "item_id": "gold-ingot",
+        "item_name": "金インゴット",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "gold-coin",
+        "item_name": "金貨",
+        "quantity": 1.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "silver-coin",
+    "recipe_name": "Silver Coin",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/silver-coin",
+    "craft_time_seconds": 16.0,
+    "device_id": "processor",
+    "device_name": "プロセッサー",
+    "inputs": [
+      {
+        "item_id": "silver-ingot",
+        "item_name": "銀インゴット",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "silver-coin",
+        "item_name": "銀貨",
+        "quantity": 5.0,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "recipe_id": "copper-coin",
+    "recipe_name": "Copper Coin",
+    "url": "https://alchemy-factory-codex.com/ja/recipe/copper-coin",
+    "craft_time_seconds": 12.0,
+    "device_id": "processor",
+    "device_name": "プロセッサー",
+    "inputs": [
+      {
+        "item_id": "copper-ingot",
+        "item_name": "銅インゴット",
+        "quantity": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "item_id": "copper-coin",
+        "item_name": "銅貨",
+        "quantity": 300.0,
+        "probability": 1.0
+      }
+    ]
+  }
+]
