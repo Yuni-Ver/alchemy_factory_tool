@@ -5,6 +5,7 @@ from decimal import Decimal, ROUND_CEILING
 from pathlib import Path
 
 import duckdb
+from number_display import format_display
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -20,7 +21,7 @@ def ceil_decimal(value: Decimal) -> int:
     return int(value.to_integral_value(rounding=ROUND_CEILING))
 
 
-def load_data(con):
+def load_data(con, *, all_recipes=False):
     """DBのレシピ情報をPythonの辞書へ読み込む。"""
 
     recipe_rows = con.execute("""
@@ -61,8 +62,7 @@ def load_data(con):
             (item_id, dec(quantity))
         )
 
-    # 一つのアイテムに複数レシピがある場合、
-    # recipe_idの辞書順で最初のものを採用
+    # 全候補を保持し、既存CLIではrecipe_id順の最初を採用する。
     recipes_by_item = {}
 
     for row in recipe_rows:
@@ -77,8 +77,7 @@ def load_data(con):
             probability,
         ) = row
 
-        recipes_by_item.setdefault(
-            output_item,
+        recipes_by_item.setdefault(output_item, []).append(
             {
                 "recipe_id": recipe_id,
                 "recipe_name": recipe_name,
@@ -91,6 +90,8 @@ def load_data(con):
             },
         )
 
+    if not all_recipes:
+        recipes_by_item = {item: options[0] for item, options in recipes_by_item.items()}
     return recipes_by_item, item_names
 
 
@@ -230,7 +231,7 @@ def main():
 
     print(
         f"\n生産対象: {item_names[args.item_id]}"
-        f" ({args.rate}個/分)"
+        f" ({format_display(args.rate)}個/分)"
     )
 
     print("\n=== 必要設備 ===")
@@ -242,14 +243,14 @@ def main():
             f"{machine['item_name']}: "
             f"{machine['device_name']} "
             f"{machine['machine_count']}台 "
-            f"(必要量: {machine['target_rate']:.2f}/分)"
+            f"(必要量: {format_display(machine['target_rate'])}/分)"
         )
 
     print("\n=== 外部調達する原材料 ===")
     for material_id, rate in sorted(materials.items()):
         print(
             f"{item_names.get(material_id, material_id)}: "
-            f"{rate:.2f}/分"
+            f"{format_display(rate)}/分"
         )
 
 
