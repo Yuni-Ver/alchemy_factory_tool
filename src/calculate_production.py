@@ -187,6 +187,24 @@ def calculate_production(
     return machines, base_materials
 
 
+def calculate_from_input(item_id, input_item, input_per_minute, recipes_by_item, item_names):
+    """指定素材を外部供給し、その供給量に対応する生産量を逆算する。"""
+    input_rate = dec(input_per_minute)
+    if not input_rate.is_finite() or input_rate <= 0:
+        raise ValueError("入力供給量は0より大きい有限の数値にしてください")
+    if input_item == item_id:
+        raise ValueError("入力素材には最終アイテム以外を選んでください")
+    # 中間素材を供給する場合、その素材を作る工程は不要になる。
+    selected = {item: recipe for item, recipe in recipes_by_item.items() if item != input_item}
+    _, unit_materials = calculate_production(item_id, Decimal(1), selected, item_names)
+    required_input = unit_materials.get(input_item, Decimal(0))
+    if required_input <= 0:
+        raise ValueError("選択したレシピ経路では指定した入力素材を使用しません")
+    output_rate = input_rate / required_input
+    machines, materials = calculate_production(item_id, output_rate, selected, item_names)
+    return output_rate, machines, materials
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Alchemy Factory 生産ライン計算"
