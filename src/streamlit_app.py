@@ -5,16 +5,15 @@ from functools import partial
 import duckdb
 import streamlit as st
 
-from calculate_production import DB_PATH, calculate_production, calculate_from_input, load_data
+from calculate_production import DB_PATH, calculate_production, calculate_from_input, calculate_full_utilization, load_data
 from number_display import format_display, truncate_display
 from recipe_graph import build_recipe_graph, machine_utilization, render_recipe_graph
 from recipe_search import search_recipes
+from recipe_browser import show_recipe_browser
 
 
 st.set_page_config(page_title="Alchemy Factory 生産計算", layout="wide")
 st.set_option("client.toolbarMode", "viewer")
-st.title("Alchemy Factory 生産ライン計算")
-st.caption("毎分の目標生産量または素材の供給量から、必要な設備と素材を計算します。")
 
 if not DB_PATH.exists():
     st.error(f"データベースが見つかりません: {DB_PATH}")
@@ -44,6 +43,33 @@ def item_label(item_id):
     return f"{name} ({item_id})" if name_counts[item_names[item_id]] > 1 else name
 
 
+def switch_screen():
+    if st.session_state["screen"] == "レシピ一覧・検索":
+        st.session_state["production_snapshot"] = {
+            key: value for key, value in st.session_state.items()
+            if key in {"target_item", "calculation_mode", "output_rate", "input_rate", "input_item", "optimize_final"}
+            or key.startswith("recipe:")
+        }
+    else:
+        st.session_state.update(st.session_state.get("production_snapshot", {}))
+
+
+def open_browser_recipe(recipe_id, output_item):
+    st.session_state.update(st.session_state.get("production_snapshot", {}))
+    st.session_state["screen"] = "生産計算"
+    st.session_state["target_item"] = output_item
+    st.session_state[f"recipe:{output_item}"] = recipe_id
+    st.session_state[f"selected_recipe:{output_item}"] = recipe_id
+
+
+with st.sidebar:
+    screen = st.radio("画面", ["生産計算", "レシピ一覧・検索"], key="screen", on_change=switch_screen)
+if screen == "レシピ一覧・検索":
+    show_recipe_browser(recipe_options, item_names, item_label, open_browser_recipe)
+    st.stop()
+
+st.title("Alchemy Factory 生産ライン計算")
+st.caption("毎分の目標生産量または素材の供給量から、必要な設備と素材を計算します。")
 item_ids = sorted(item_names, key=lambda item_id: (item_names[item_id] or item_id, item_id))
 item_id = st.selectbox("生産するアイテム", item_ids, format_func=item_label, key="target_item")
 with st.expander("レシピ検索"):
@@ -80,6 +106,9 @@ with st.expander("レシピ検索"):
 mode = st.radio("計算方式", ["出力指定", "入力指定"], horizontal=True, key="calculation_mode")
 if mode == "出力指定":
     rate = st.number_input("目標生産量（個/分）", min_value=0.01, value=10.0, step=1.0, format="%.2f", key="output_rate")
+optimize_final = st.checkbox("最終設備の稼働率を100%に自動調整", key="optimize_final")
+if optimize_final:
+    st.caption("出力指定：目標量以上で最も近い100%稼働の生産量に増やします。入力指定：供給量以内で100%稼働できる最大台数に合わせます。1台分に足りない場合は元の生産量を維持します。")
 
 st.subheader("使用するレシピ")
 st.caption("数値は小数点以下2桁で切り捨て表示します。計算には切り捨て前の値を使用します。")
@@ -148,6 +177,12 @@ if item_id:
             machines, materials = calculate_production(
                 item_id, Decimal(str(rate)), recipes_by_item, item_names
             )
+        original_rate = Decimal(str(rate))
+        if optimize_final:
+            rate, machines, materials = calculate_full_utilization(
+                item_id, original_rate, recipes_by_item, item_names,
+                input_item=input_item if mode == "入力指定" else None,
+            )
     except (ValueError, ArithmeticError) as exc:
         st.error(f"計算できません: {exc}")
         st.stop()
@@ -155,7 +190,19 @@ if item_id:
     st.subheader(f"{item_label(item_id)}：{format_display(rate, grouped=True)} 個/分")
     if mode == "入力指定":
         st.caption(f"入力：{item_label(input_item)} {format_display(input_rate, grouped=True)} 個/分")
-    st.caption("生産量は目標を満たす理論上の必要量です。設備台数は工程ごとに切り上げ、上で選択したレシピを使用します。")
+        if optimize_final:
+            unused = max(Decimal(0), Decimal(str(input_rate)) - materials.get(input_item, Decimal(0)))
+            st.caption(f"入力素材の使用量：{format_display(materials.get(input_item, 0))} 個/分 ／ 未使用量：{format_display(unused)} 個/分")
+    if optimize_final:
+        if item_id not in recipes_by_item:
+            st.info("最終アイテムに生産レシピがないため、自動調整は行いません。")
+        else:
+            final_machine = next(m for m in machines if m["item_id"] == item_id)
+            utilization = machine_utilization(final_machine, recipes_by_item[item_id])
+            st.caption(f"自動調整：{format_display(original_rate)} → {format_display(rate)} 個/分 ／ 最終設備 {final_machine['machine_count']}台・稼働率 {format_display(utilization)}%")
+            if mode == "入力指定" and utilization < Decimal("99.999999"):
+                st.info("供給量が最終設備1台の100%稼働に足りないため、供給量を使い切る生産量を維持しています。")
+    st.caption("表示する生産量に必要な設備・素材の理論値です。設備台数は工程ごとに切り上げ、上で選択したレシピを使用します。")
 
     st.subheader("レシピの関連図")
     st.caption("左から右へ、素材 → 加工機 → 出力アイテムの順に表示します。黄色は外部調達、青は中間素材、緑は生産目標です。矢印は各工程の毎分の必要量を表します。")

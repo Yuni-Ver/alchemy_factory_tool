@@ -7,7 +7,7 @@ def normalize(value):
     return unicodedata.normalize("NFKC", str(value or "")).casefold()
 
 
-def search_recipes(recipe_options, item_names, query):
+def search_recipes(recipe_options, item_names, query, *, input_item=None, device_id=None, output_item=None):
     """レシピを出力ごとに重複させず、空白区切りの全語で検索する。"""
     recipes = {}
     for item_id, options in recipe_options.items():
@@ -17,6 +17,12 @@ def search_recipes(recipe_options, item_names, query):
     tokens = normalize(query).split()
     results = []
     for entry in recipes.values():
+        if input_item is not None and not any(i == input_item for i, _ in entry["inputs"]):
+            continue
+        if device_id is not None and entry["device_id"] != device_id:
+            continue
+        if output_item is not None and not any(i == output_item for i, _, _ in entry["outputs"]):
+            continue
         fields = [entry["recipe_id"], entry["recipe_name"], entry["device_id"], entry["device_name"]]
         for item_id, _ in entry["inputs"]:
             fields.extend((item_id, item_names.get(item_id)))

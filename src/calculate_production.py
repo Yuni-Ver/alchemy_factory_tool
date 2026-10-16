@@ -1,7 +1,7 @@
 
 import argparse
 from collections import defaultdict
-from decimal import Decimal, ROUND_CEILING
+from decimal import Decimal, ROUND_CEILING, ROUND_FLOOR
 from pathlib import Path
 
 import duckdb
@@ -203,6 +203,33 @@ def calculate_from_input(item_id, input_item, input_per_minute, recipes_by_item,
     output_rate = input_rate / required_input
     machines, materials = calculate_production(item_id, output_rate, selected, item_names)
     return output_rate, machines, materials
+
+
+def calculate_full_utilization(item_id, rate, recipes_by_item, item_names, *, input_item=None):
+    """最終設備を整数台の最大能力に合わせる。入力指定では生産上限を守る。"""
+    rate = dec(rate)
+    if not rate.is_finite() or rate <= 0:
+        raise ValueError("生産量は0より大きい有限の数値にしてください")
+    selected = {item: recipe for item, recipe in recipes_by_item.items() if item != input_item}
+    recipe = selected.get(item_id)
+    if recipe is None:
+        machines, materials = calculate_production(item_id, rate, selected, item_names)
+        return rate, machines, materials
+    capacity = (Decimal(60) / recipe["craft_time"]
+                * recipe["output_quantity"] * recipe["probability"])
+    if capacity <= 0:
+        raise ValueError("最終設備の生産能力が不正です")
+    rounding = ROUND_FLOOR if input_item is not None else ROUND_CEILING
+    count = int((rate / capacity).to_integral_value(rounding=rounding))
+    # 1台を100%で動かせない場合は、供給量を使い切る元の計算を維持。
+    adjusted_rate = capacity * count if count > 0 else rate
+    machines, materials = calculate_production(item_id, adjusted_rate, selected, item_names)
+    if count > 0:
+        # Decimalの割り算の丸めで境界上の設備台数が1台増えることを防ぐ。
+        for machine in machines:
+            if machine["item_id"] == item_id:
+                machine["machine_count"] = count
+    return adjusted_rate, machines, materials
 
 
 def main():
